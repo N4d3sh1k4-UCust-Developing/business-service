@@ -14,7 +14,7 @@ COPY business-service business-service
 
 # Собираем сервис (замени :user-service на имя своего модуля)
 RUN chmod +x gradlew
-RUN ./gradlew :business-service:build -x test --no-daemon
+RUN ./gradlew build -x test --no-daemon
 
 # Stage 2: Запуск
 FROM eclipse-temurin:21-jre-alpine
