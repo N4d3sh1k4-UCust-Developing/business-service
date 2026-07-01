@@ -5,8 +5,8 @@ spring:
     password: ${DB_PASSWORD}
   rabbitmq:
     host: rabbitmq
-    username: rmuser
-    password: rmpassword
+    username: service-user
+    password: servicepassword
 
 minio:
   endpoint: http://minio:9000
